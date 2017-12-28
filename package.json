@@ -1,0 +1,17 @@
+{
+  "name": "crypto-sheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@datafire/google_sheets": "^3.0.0",
+    "@datafire/http": "^2.0.0",
+    "cheerio": "^1.0.0-rc.2",
+    "datafire": "^2.17.0"
+  }
+}
