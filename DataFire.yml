@@ -1,9 +1,9 @@
 variables:
   spreadsheet_id: 1NI17hVbUbDF7b1FGdf6SJlGyGwdWyVwmqRUMLD4HM6g
 actions:
-  retrieve: ./retrieve.js
-  update: ./update.js
   scrape: ./scrape.js
+  update: ./update.js
+  retrieve: ./retrieve.js
 options:
   cors: true
 tasks:
