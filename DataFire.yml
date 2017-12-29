@@ -4,3 +4,9 @@ actions:
   retrieve: ./retrieve.js
   update: ./update.js
   scrape: ./scrape.js
+options:
+  cors: true
+tasks:
+  task:
+    action: update
+    schedule: rate(1 hour)
