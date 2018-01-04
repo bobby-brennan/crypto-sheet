@@ -9,4 +9,4 @@ options:
 tasks:
   task:
     action: update
-    schedule: rate(1 hour)
+    schedule: rate(5 minutes)
