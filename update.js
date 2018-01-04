@@ -21,6 +21,7 @@ module.exports = new datafire.Action({
       } else {
         update.notes = currency.notes;
         update.use = currency.use;
+        update.institutions = currency.institutions;
       }
     })
     let values = next.map(currency => {
