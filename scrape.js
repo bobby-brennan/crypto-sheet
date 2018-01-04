@@ -4,7 +4,7 @@ let http = require('@datafire/http').create();
 
 const SITE = 'https://coinmarketcap.com';
 const URL = SITE + '/all/views/all/';
-const NUM_CURRENCIES = 50;
+const NUM_CURRENCIES = 200;
 
 function parseNumber(str) {
   let isPercent = str.indexOf('%') !== -1;
@@ -41,5 +41,5 @@ module.exports = new datafire.Action({
       currencies.push(currency);
     })
     return currencies;
-  }
-})
+  },
+});
