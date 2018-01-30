@@ -5,7 +5,7 @@ function getColumnLetter(idx) {
   return String.fromCharCode(idx + 64);
 }
 
-const PAGE_SIZE = 50;
+const PAGE_SIZE = 200;
 const START_ROW = 2;
 const END_ROW = START_ROW + PAGE_SIZE
 const COLUMNS = require('./columns');
@@ -25,5 +25,5 @@ module.exports = new datafire.Action({
       return obj;
     });
     return values;
-  }
-})
+  },
+});

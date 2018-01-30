@@ -31,9 +31,9 @@ module.exports = new datafire.Action({
       spreadsheetId: context.variables.spreadsheet_id,
       range: 'A2:' + getColumnLetter(COLUMNS.length) + (next.length + 1),
       body: {values},
-      valueInputOption: 'RAW',
+      valueInputOption: 'USER_ENTERED',
     }, context)
 
     return "Success";
-  }
-})
+  },
+});
