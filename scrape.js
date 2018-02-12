@@ -37,7 +37,7 @@ module.exports = new datafire.Action({
       currency.symbol = row.find('.currency-symbol').text().trim();
       currency.market_cap = parseNumber(row.find('.market-cap').text());
       currency.price = parseNumber(row.find('.price').text());
-      currency.week_change = parseNumber(row.find('.percent-7d').text());
+      currency.week_change = parseNumber(row.find('.percent-change[data-timespan="7d"]').text());
       currencies.push(currency);
     })
     return currencies;
